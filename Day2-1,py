@@ -1,0 +1,16 @@
+#Day2-2
+for i in range(int(input())):                               
+    n=input()                                                      
+    l=[]
+    s=""
+    for j in n:
+        if(j== '(' ):                                               
+            pass
+        elif(j.isalpha()):         
+            s=s+str(j)
+        elif(j== ')' ):
+            if(len(l)!=0):
+                s=s+str(l.pop())                            
+        else:
+            l.append(j)                                        
+    print(s)
