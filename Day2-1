@@ -1,0 +1,9 @@
+#Day2-1(Factorial)
+for i in range(int(input())):
+    n=int(input())
+    i=5
+    count=0
+    while(n/i>=1):
+        count+=int(n/i)
+        i*=5
+    print(count)
